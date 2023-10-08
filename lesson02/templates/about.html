@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Roboto-BoldItalic.ttfRoboto-BoldItalic.ttf') }}">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1 class="text-monospace">Привет, меня зовут {{ name }}</h1>
+    <!--<img src="/Flask_lesson02/lesson02/static/image/moscow.jpg" alt="Москва" width="300">-->
+    <img src="{{ url_for('static', filename='/Flask_lesson02/lesson02/static/image/moscow.jpg') }}"  width="300">
+<p class="text-body text-justify">
+    — Скажи-ка, дядя, ведь недаром <br>
+    Москва, спаленная пожаром,<br>
+    Французу отдана?<br>
+    Ведь были ж схватки боевые,<br>
+    Да, говорят, еще какие!<br>
+    Недаром помнит вся Россия<br>
+    Про день Бородина!<br>
+</p>
+
+<p class="alert-dark">Все права защищены &copy;</p>
+
+<script src="{{ url_for('static', filename='Roboto-BoldItalic.ttf') }}"></script>
+</body>
+</html>
+
